@@ -14,8 +14,8 @@ class YoutubeResponse : Serializable {
     var nextPageToken: String? = null
     @SerializedName("prevPageToken")
     var prevPageToken: String? = null
-    @SerializedName("pageInfo")
-    var pageInfo: PageInfo? = null
+    @SerializedName("pageInfoResponse")
+    var pageInfoResponse: PageInfoResponse? = null
     @SerializedName("items")
     var videos: ArrayList<VideoResponse>? = null
 }

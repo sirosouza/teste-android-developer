@@ -10,7 +10,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 object YoutubeApi {
-    val KEY = "AIzaSyBbIjopEsk7uz5_jHfJzRpjutG8XJS9bns"
+    val KEY = "key"
     private var testeICaseiRequester: TesteICaseiRequester? = null
 
     private fun initApi(context: Context, parameter: String) {
