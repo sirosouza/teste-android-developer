@@ -1,6 +1,6 @@
  
-# Instruções - Em Andamento
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Siga as especificações abaixo.
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail android@icasei.com.br com o título **Teste Android Developer**
+# Instruções
+Para execução deste projeto com consumo do Youtube API v3, basta baixar o projeto aqui no GitHub ou se preferir, selecionar Fork,
+em seguida, abra no Android Studio, automaticamente ele fará o build, caso o contrário, selecione opção Build/Make Project,
+assim, o projeto estará pronto para compilação.
+O projeto não possui teste unitário, pois não teve contexto plausível e não possui teste automatizado.

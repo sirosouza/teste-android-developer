@@ -4,12 +4,12 @@ import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
-import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import br.com.newsoftwarebrasil.testeicasei.R
@@ -132,6 +132,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setEmptyList() {
+        val animation = AnimationUtils.loadAnimation(activity, R.anim.move_up)
+        fmSearchResult?.startAnimation(animation);
+
         fmSearch!!.visibility = View.GONE
         fmSearchResult!!.visibility = View.VISIBLE
 
@@ -141,13 +144,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setViews() {
-        val constraintSet = ConstraintSet()
-        constraintSet.clone(constraint!!)
-        constraintSet.connect(R.id.fm_search, ConstraintSet.LEFT, ConstraintSet.PARENT_ID, ConstraintSet.LEFT, 0)
-        constraintSet.connect(R.id.fm_search, ConstraintSet.RIGHT, ConstraintSet.PARENT_ID, ConstraintSet.RIGHT, 0)
-        constraintSet.connect(R.id.fm_search, ConstraintSet.START, ConstraintSet.PARENT_ID, ConstraintSet.START, 0)
-        constraintSet.connect(R.id.fm_search, ConstraintSet.TOP, ConstraintSet.PARENT_ID, ConstraintSet.TOP, 0)
-        constraintSet.applyTo(constraint!!)
+        val animation = AnimationUtils.loadAnimation(activity, R.anim.move_up)
+        fmSearchResult?.startAnimation(animation);
 
         fmSearch!!.visibility = View.GONE
         fmSearchResult!!.visibility = View.VISIBLE

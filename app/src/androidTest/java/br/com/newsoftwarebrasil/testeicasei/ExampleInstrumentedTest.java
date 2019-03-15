@@ -23,4 +23,5 @@ public class ExampleInstrumentedTest {
 
         assertEquals("br.com.newsoftwarebrasil.testeicasei", appContext.getPackageName());
     }
+
 }
