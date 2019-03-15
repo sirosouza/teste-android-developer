@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Teste iCasei</string>
+    <string name="main_search">Pesquisar</string>
+    <string name="empty_video_list">Não encontramos vídeos com o termo buscado.\n\n Utilize outras palavras-chave</string>
+    <string name="empty_text_for_search">Por favor, insira a palavra-chave para a busca.</string>
+    <string name="video_details">Detalhes do Video</string>
+    <string name="youtube_api_error">Erro no servidor, tente mais tarde!</string>
+</resources>
